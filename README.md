@@ -85,7 +85,7 @@ very basic svdquartets job submission
 #### run_iqtree_gcf.sh
 calculate gCF, sCF for a particular species tree given gene trees or alignments
 
-## filter genes (additional filtering schemes after "second pass" above) and compare trees
+## Filtering genes (additional filtering schemes after "second pass" above) and comparing trees; final plots
 ###	script dir: filter_and_compare
 #### get_intersection_genelist.R
 determine which genes are present in all gene sets (exons, introns, supercontigs) after second pass filtering for intersection dataset
