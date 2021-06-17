@@ -82,3 +82,18 @@ run astral and gcf for all filtering schemes
 single astral run with automatic prep steps
 #### run_paup_svdquartets.sh
 very basic svdquartets job submission
+#### run_iqtree_gcf.sh
+calculate gCF, sCF for a particular species tree given gene trees or alignments
+
+## filter genes (additional filtering schemes after "second pass" above) and compare trees
+###	script dir: filter_and_compare
+#### get_intersection_genelist.R
+determine which genes are present in all gene sets (exons, introns, supercontigs) after second pass filtering for intersection dataset
+#### run_sortadate.sh
+Run SortaDate to get list of metrics for filtering gene trees
+#### create_sortadate_filtering_schemes.R
+use sortadate stats to make gene lists for filtering schemes (dataset names may not reflect manuscript versions); repeat tree building steps above with new gene lists
+#### run_TreeDist.R
+run various tree distance metrics including MutualClusteringInfo
+#### 2021AJB_manuscript_plots.R
+prepare final data/tree comparisons and create all R-generated figures for manuscript as well as additional stats (sources nodekey_functions.R and subtree_functions.R)
